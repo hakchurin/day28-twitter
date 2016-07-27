@@ -1,0 +1,206 @@
+.loginForm {
+    height: 50vh;
+    width: 80vw;
+    background: #c0c0c0;
+    text-align: center;
+    margin-left: 5rem;
+}
+h2 {
+    font-size: 3rem;
+    font-family: Verdana;
+    color: #484848;
+}
+#username {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 4rem auto 3%;
+    height: 10%;
+    font-size: 1.5rem;
+}
+#password {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 4rem auto 3%;
+    height: 10%;
+    font-size: 1.5rem;
+    -webkit-text-security: disc;
+}
+.loginForm button {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+form {
+    height: 70vh;
+    width: 80vw;
+    background: #c0c0c0;
+    text-align: center;
+    margin-left: 5rem;
+}
+.post {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 4rem auto 3%;
+    height: 10%;
+    font-size: 1.5rem;
+}
+#submit {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+h1 {
+    font-family: Verdana;
+    font-family: Verdana;
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    color: #484848;
+}
+.tweetList {
+    list-style-type: none;
+    padding-right: 2rem;
+}
+.tweetPost {
+    border: 2px solid #c0c0c0;
+    background: #484848;
+}
+.deleteBtn {
+    height: 1.5rem;
+    width: 4rem;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 1rem;
+    margin-left: 53rem;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+#user {
+    font-size: 1.5rem;
+    font-family: Verdana;
+    margin: 0;
+    color: #c0c0c0;
+}
+#tweet {
+    font-size: 3rem;
+    font-family: Verdana;
+    margin: 0;
+    color: #FDD262;
+}
+#logoutBtn {
+    height: 2rem;
+    width: 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    margin-left: 53rem;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+#signupBtn {
+    height: 2rem;
+    width: 4rem;
+    font-size: .7rem;
+    position: relative;
+    bottom: 1rem;
+    margin-left: 53rem;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+#loginButton {
+    height: 2rem;
+    width: 4rem;
+    font-size: .7rem;
+    position: relative;
+    bottom: 1rem;
+    margin-left: 53rem;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}
+nav {
+    bottom: 34rem;
+    position: absolute;
+    left: 5.4rem;
+}
+#name {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 0 auto 3%;
+    height: 0;
+    font-size: 1.5rem;
+}
+#username {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 0 auto 3%;
+    height: 0;
+    font-size: 1.5rem;
+}
+#email {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 0 auto 3%;
+    height: 0;
+    font-size: 1.5rem;
+}
+#password {
+    border: none;
+    padding: 3%;
+    border-radius: 2px;
+    width: 90%;
+    display: block;
+    margin: 0 auto 3%;
+    height: 0;
+    font-size: 1.5rem;
+}
+
+
+
+#signSubmit {
+    height: 2rem;
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    bottom: 0;
+    margin-left: 0;
+    &:hover {
+        background-color: #FDD262;
+        color: black;
+    }
+}

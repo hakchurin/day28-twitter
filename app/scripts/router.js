@@ -3,11 +3,12 @@ import $ from 'jquery';
 import Backbone from 'backbone';
 import settings from './settings';
 import session from './session';
-import signUp from './signUp';
-import login from './login';
+import SignUpView from './signUp';
+import LoginView from './login';
 import TweetForm from './tweetPage';
 //import TweetPost from './tweetPost';
 import TweetView from './tweetView';
+import HeaderView from './header';
 
 
 const Router = Backbone.Router.extend({
@@ -19,30 +20,38 @@ const Router = Backbone.Router.extend({
 
     },
     signUpFunction: function() {
-        $('.container').empty().append(signUp);
+      let signUpView = new SignUpView();
+      signUpView.render();
+        $('.container').empty().append(signUpView.$el);
+
 
   },
   loginFunction: function() {
-      $('.container').append(login);
+    let loginView= new LoginView();
+    loginView.render();
+      $('.container').empty().append(loginView.$el);
+      router.navigate('login', {trigger: true});
+
 
 },
 tweetFunction: function() {
   //  $('.container').empty().append(tweets);
     let tweetForm = new TweetForm();
-    $('.tweetPostContainer').empty().append(tweetForm.$el);
+    $('.container').empty().append(tweetForm.$el);
     tweetForm.render();
 
     console.log(tweetForm);
 
 },
 tweetPostFunction: function(){
+  let headerView = new HeaderView();
   let tweetView = new TweetView();
   tweetView.render();
   let tweetForm = new TweetForm();
-  $('.tweetPostContainer').empty().append(tweetForm.$el);
+  $('.container').empty().append(headerView.render().$el).append(tweetForm.$el).append(tweetView.$el);
   tweetForm.render();
 
-  $('.tweetFeed').empty().append(tweetForm.$el).append(tweetView.$el);
+  // $('.container').empty().append(tweetForm.$el);
 
 }
 

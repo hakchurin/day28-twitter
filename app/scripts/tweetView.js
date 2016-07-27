@@ -9,7 +9,7 @@ import TweetPost from './tweetPost';
 const TweetView = Backbone.View.extend({
   initialize: function(){
     twitter.fetch();
-    twitter.on('add', () => {
+    twitter.on('update', () => {
       this.render();
     });
   },

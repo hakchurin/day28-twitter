@@ -11,6 +11,8 @@ import TweetModel from './tweetModel';
 
 
 
+// <input type="submit" class="submit" name="submit" value="submit">
+
 
 
 const TweetForm = Backbone.View.extend({
@@ -18,9 +20,10 @@ const TweetForm = Backbone.View.extend({
   template: function(){
     return `
 
-          <h1>write a Tweet </h1>
+          <h1>Write a Tweet </h1>
           <input type="text" name="post" class="post" placeholder="post">
-          <input type="submit" class="submit" name="submit" value="submit">
+          <button id="submit"> Submit</button>
+
   `;
 },
   render: function(){
@@ -28,7 +31,7 @@ const TweetForm = Backbone.View.extend({
     this.$el.append(this.template());
   },
   events:{
-    'click input[type="submit"]':'sendTweet'
+    'click #submit':'sendTweet'
   },
 
 sendTweet: function(evt){
